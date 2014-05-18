@@ -8,9 +8,6 @@ developed by Aleksejs Belezjaks for University of Hull 08341 Final Project 13/14
 	.NET Framework 4.0
 	Visual C++ 2012 Redistributable
 
-// Installation //
-	Unzip or copy executables folder on your hard drive. Run “name” file.
-	
 // Simulation controls //
 You can change various simulation parameters during execution to see effect in real time. 
 This is list of simulation parameters you can change in real time.
