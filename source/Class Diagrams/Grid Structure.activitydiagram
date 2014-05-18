@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b3b305e8-8878-4d8f-9d6b-720c46009751" name="Grid Structure" linkedPackageId="29d3551a-c594-41b2-b86e-ce255cb4120f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="55ed7f6a-903a-4af6-ad85-5ecfd56029fd">
+      <elementDefinition Id="d8e797e7-c43c-4b7a-b521-f35e618ca2ca" />
+      <body>2D simple array</body>
+    </comment>
+    <comment Id="7a93998a-784f-4c22-bacc-16d181bf101a">
+      <elementDefinition Id="da9422bd-d61b-46a1-97be-2dfce5233eed" />
+      <body>Multiple 2D layers to emulate 3D space</body>
+    </comment>
+    <comment Id="92520668-01a8-403c-a70a-2aee14bbcd16">
+      <elementDefinition Id="e2d5a28d-29af-4927-ac11-d653960a1894" />
+      <body>Multiple 2D layers to emulate 3D space</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c62ad844-5957-499e-94d8-f9e7114c9976">
+      <profileInstance Id="2d1efdb9-732a-44b8-8154-6f7253d91497" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dbc2d64f-0b26-439a-bdd5-08ef75b64105">
+      <profileInstance Id="f11940ca-8ced-4d25-a4c4-28be47927fac" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="ca732d24-9395-40fd-90c5-1189cf143d38" name="Grid Structure" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="c0d6b5b1-2b41-4346-9e56-b62b316d444d" />
+        <nodes>
+          <objectNode Id="c54db5ec-6c5d-402d-847f-26cc57b18a49" name="Environment Grid" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="945c5217-e4ec-40c7-b7ef-8d6c9daf74bb" />
+            <objectFlowTargets>
+              <objectFlow Id="a49bebcd-e8d9-4b29-a8f2-00714d8e8f85" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="ec21db3a-1062-4ec2-9797-1fb82761684a" LastKnownName="GridObject[][]" />
+                <elementDefinition Id="d6e4fffd-be94-4793-939a-3f511d32f21d" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="f907090c-728e-4d59-9e3c-f0b8c52d8208" name="2147483647" value="2147483647">
+                <elementDefinition Id="46fa57ab-394a-4238-9568-e71fcba0c2e3" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="ec21db3a-1062-4ec2-9797-1fb82761684a" name="GridObject[][]" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="569ad6ad-1fff-4041-b5d6-b333f59741fe" />
+            <upperBound>
+              <literalInteger Id="3b510f8f-9274-448e-b3d3-62bfb3d90e1a" name="2147483647" value="2147483647">
+                <elementDefinition Id="ea6c2d1e-f447-4fef-aeba-7d106e3a6725" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="9864a787-91f3-481b-8923-24313529b14d" name="Environment Grid" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="f5400f7a-e3a8-4f39-b1ed-81f50f62c9dd" />
+            <objectFlowTargets>
+              <objectFlow Id="c3a74829-7e21-45dd-a8ae-9b2fdaa4a555" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="a86410e6-4900-4d19-9628-0078c6967f1b" LastKnownName="2D Grid Layer" />
+                <elementDefinition Id="e2beff21-a2d9-4b29-97c0-e4769a320ff4" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="ca522142-65a5-4572-948f-9a3c3935f97b" name="2147483647" value="2147483647">
+                <elementDefinition Id="d7ac3c42-c1b2-4d9b-9e87-064c1a3d9c5a" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="a61a74db-69b4-42c1-a03b-071c57eb0e1b" name="GridObject[][]" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="aa9314c3-8deb-4af9-b8b0-aac0cc88458b" />
+            <upperBound>
+              <literalInteger Id="1ad3c454-99d9-47c3-9bb5-95e667c3f29e" name="2147483647" value="2147483647">
+                <elementDefinition Id="d3ee04f8-fd33-4536-a2ef-c8e3cf7a6bf3" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="a86410e6-4900-4d19-9628-0078c6967f1b" name="2D Grid Layer" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="44078c0e-d2a3-4750-aaeb-af3d5334a01b" />
+            <objectFlowTargets>
+              <objectFlow Id="ed9cfeda-434b-4cad-851a-8fcf26f40551" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="a61a74db-69b4-42c1-a03b-071c57eb0e1b" LastKnownName="GridObject[][]" />
+                <elementDefinition Id="970404cd-e965-45bd-b44e-725f1efbaf0e" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="a9fe8d2a-05b9-4f2b-a7a8-711734fda38a" name="2147483647" value="2147483647">
+                <elementDefinition Id="31428565-603d-476a-9088-610b5f8295fe" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="a2fc25da-121a-42af-9454-c60bd9ed1ffb" name="Environment Grid" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="21f7f2a5-1c4e-476f-a88f-a39bc90503d1" />
+            <objectFlowTargets>
+              <objectFlow Id="d58c2a36-3f91-46b6-9c8c-387f92506bd1" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="51ace012-b97c-4085-ab9e-40495f9f4038" LastKnownName="GridCell[][]" />
+                <elementDefinition Id="c8e7b286-14ef-4ea6-9833-ecce97a834ba" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="37b6c08e-f26b-4729-bf12-f20e04a4c994" name="2147483647" value="2147483647">
+                <elementDefinition Id="3b97e2cf-efc1-499f-92fa-889c563223c3" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="1c8f3340-06d7-41bf-b7d3-959a6e3dab49" name="GridObject[]" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="c7752d6f-0122-4382-b832-7b09b299bfbc" />
+            <upperBound>
+              <literalInteger Id="790d4089-b467-464a-ad76-c74928fe42ed" name="2147483647" value="2147483647">
+                <elementDefinition Id="d8cded17-a614-4c30-ba3e-76e5e12f2c58" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="51ace012-b97c-4085-ab9e-40495f9f4038" name="GridCell[][]" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="3b5317af-477a-44d8-82a5-649ce72b73f9" />
+            <objectFlowTargets>
+              <objectFlow Id="56d146a7-dce3-4b34-8178-724423d8e205" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1c8f3340-06d7-41bf-b7d3-959a6e3dab49" LastKnownName="GridObject[]" />
+                <elementDefinition Id="5f5d76d0-1afa-4bab-b54c-90cd1988a383" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="2717373b-e06b-4900-afd4-e59dfd76fbfe" name="2147483647" value="2147483647">
+                <elementDefinition Id="42f14ef0-495d-45fb-8526-7a1522cfc481" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="29d3551a-c594-41b2-b86e-ce255cb4120f" name="Class Diagrams">
+    <elementDefinition Id="5fa2f7a7-bbdb-4cef-b676-c73d5e0ef990" />
+  </package>
+</activityRootModel>

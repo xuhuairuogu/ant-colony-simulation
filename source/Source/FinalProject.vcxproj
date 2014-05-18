@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27A9AE6B-9226-4D22-BC84-7341641C2163}</ProjectGuid>
+    <RootNamespace>Test</RootNamespace>
+    <ProjectName>FinalProject</ProjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\References\inc;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);C:\Program Files (x86)\Parasoft\C++test for Visual Studio\9.5\engine\runtime\include</IncludePath>
+    <LibraryPath>$(SolutionDir)\References\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\References\inc;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);;C:\Program Files (x86)\Parasoft\C++test for Visual Studio\9.5\engine\runtime\include</IncludePath>
+    <LibraryPath>$(SolutionDir)\References\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSP'">
+    <ExecutablePath>$(SN_PSP_PATH)\bin;$(SN_COMMON_PATH)\bin;$(VCTargetsPath)\Platforms\PSP;$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <TurnOffAssemblyGeneration>false</TurnOffAssemblyGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSP'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSP'">
+    <ClCompile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Ant.h" />
+    <ClInclude Include="AntColony.h" />
+    <ClInclude Include="BaseObject2D.h" />
+    <ClInclude Include="BasicMath.h" />
+    <ClInclude Include="FoodManager.h" />
+    <ClInclude Include="Home.h" />
+    <ClInclude Include="ManagedProperty.h" />
+    <ClInclude Include="Obstacle.h" />
+    <ClInclude Include="ObstacleManager.h" />
+    <ClInclude Include="Pheromone.h" />
+    <ClInclude Include="PheromoneAnt.h" />
+    <ClInclude Include="PheromoneAntColony.h" />
+    <ClInclude Include="PheromoneManager.h" />
+    <ClInclude Include="rapidxml.hpp" />
+    <ClInclude Include="rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml_utils.hpp" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="VectorAnt.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Food.h" />
+    <ClInclude Include="FrameCounter.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="GridCell.h" />
+    <ClInclude Include="GridObject2D.h" />
+    <ClInclude Include="GXBaseGame.h" />
+    <ClInclude Include="GXBaseContext.h" />
+    <ClInclude Include="GXBaseTimer.h" />
+    <ClInclude Include="lodepng.h" />
+    <ClInclude Include="QuadSheet.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="VectorAntColony.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ant.cpp" />
+    <ClCompile Include="AntColony.cpp" />
+    <ClCompile Include="BaseObject2D.cpp" />
+    <ClCompile Include="FoodManager.cpp" />
+    <ClCompile Include="Home.cpp" />
+    <ClCompile Include="Obstacle.cpp" />
+    <ClCompile Include="ObstacleManager.cpp" />
+    <ClCompile Include="Pheromone.cpp" />
+    <ClCompile Include="PheromoneAnt.cpp" />
+    <ClCompile Include="PheromoneAntColony.cpp" />
+    <ClCompile Include="PheromoneManager.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="VectorAnt.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Food.cpp" />
+    <ClCompile Include="FrameCounter.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="GridCell.cpp" />
+    <ClCompile Include="GridObject2D.cpp" />
+    <ClCompile Include="GXBaseGame.cpp" />
+    <ClCompile Include="GXBaseContext.cpp" />
+    <ClCompile Include="GXBaseTimer.cpp" />
+    <ClCompile Include="lodepng.cpp" />
+    <ClCompile Include="QuadSheet.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="VectorAntColony.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\bug.png" />
+    <Image Include="Textures\food.png" />
+    <Image Include="Textures\home.png" />
+    <Image Include="Textures\pheromone.png" />
+    <Image Include="Textures\wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="input.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

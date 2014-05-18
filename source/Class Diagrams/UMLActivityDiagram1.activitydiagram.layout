@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLActivityDiagram1">
+  <activityRootModelMoniker Id="47652944-b697-4fc1-b5c2-2f1293cbd200" />
+  <nestedChildShapes>
+    <initialNodeShape Id="32c99913-f5e9-4c20-a441-42f8e56520ca" absoluteBounds="6.125, 1.375, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="b03dc91f-c8d0-4f87-aeca-74e973fce055" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="3b06518e-a5fb-4303-8109-788d1a6e26bd" absoluteBounds="5.625, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="389531ba-0431-4215-9a2d-e15097a1b6bb" LastKnownName="Going Randomly" />
+    </actionShape>
+    <actionShape Id="1c29c6a1-e5a4-4e9b-861c-9191bb88700b" absoluteBounds="3.875, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="23b4b9c4-a070-44b6-aac7-e4643c2d93f1" LastKnownName="Going to Food" />
+    </actionShape>
+    <actionShape Id="bf76c4a6-6a33-407a-bf5e-b6ff805da56a" absoluteBounds="7.375, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="60a9b9c5-3540-4c7c-ab51-d20c826aa73f" LastKnownName="Going Home" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(6.1875 : 1.5); (6.1875 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="79bc67c3-1645-497e-bee3-8202bb242465" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="32c99913-f5e9-4c20-a441-42f8e56520ca" />
+        <actionShapeMoniker Id="3b06518e-a5fb-4303-8109-788d1a6e26bd" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

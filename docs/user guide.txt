@@ -1,0 +1,25 @@
+User Guide
+
+This document is installation document for computer simulation 
+developed by Aleksejs Belezjaks for University of Hull 08341 Final Project 13/14.
+
+
+// System Requirements //
+	.NET Framework 4.0
+	Visual C++ 2012 Redistributable
+
+// Installation //
+	Unzip or copy executables folder on your hard drive. Run “name” file.
+	
+// Simulation controls //
+You can change various simulation parameters during execution to see effect in real time. 
+This is list of simulation parameters you can change in real time.
+
+// Configuration file //
+Instead of changing all parameters in real-time, you can put them into configuration file 
+and feed it to program on start-up. You can find example configuration file in the same folder 
+as executable file. You can find description of all parameters in this file.
+
+For simulation to use your configuration file you have to pass it as command line argument. 
+For this you have to create shortcut for executable and inside target text box add name 
+of your configuration file. Example “C:\FinalProject.exe input.xml”.

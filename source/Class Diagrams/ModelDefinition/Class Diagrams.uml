@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="5fa2f7a7-bbdb-4cef-b676-c73d5e0ef990"
+  name="Class Diagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="d8e797e7-c43c-4b7a-b521-f35e618ca2ca">
+      <body>2D simple array</body>
+    </comment>
+    <comment
+      Id="da9422bd-d61b-46a1-97be-2dfce5233eed">
+      <body>Multiple 2D layers to emulate 3D space</body>
+    </comment>
+    <comment
+      Id="e2d5a28d-29af-4927-ac11-d653960a1894">
+      <body>Multiple 2D layers to emulate 3D space</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6cd14494-f0e1-44c3-8417-b4ab812fd1e5"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="97631d4f-1c2a-44a6-803f-1f1223266ca6"
+        name="Grid Structure"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="be95a26d-aaae-44df-ad47-59d9f95c4b34"
+        name="Environment Grid"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="7df027f1-41cf-44cc-8b65-131ce8918091"
+            name="Part1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="eb35590d-2712-4a29-a8b8-5deeb42a60d7"
+                LastKnownName="Component1"
+                LastKnownLocation="Class Diagrams.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="eb35590d-2712-4a29-a8b8-5deeb42a60d7"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="86926e6a-c396-43df-8c24-1c3415144013"
+        name="Grid Structure"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="aa2fa342-9930-46ae-898d-d4fbab7f610b" />
+        </ownedCommentsInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="526e3731-91a7-4141-b3ba-1a9f0cb8aba6"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e20a2e8-a8b4-4730-8736-e0800693b941"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="526e3731-91a7-4141-b3ba-1a9f0cb8aba6"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Class Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="11b8639c-539b-485c-8598-0118093dc3ae"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="c0d6b5b1-2b41-4346-9e56-b62b316d444d"
+        name="Grid Structure"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="945c5217-e4ec-40c7-b7ef-8d6c9daf74bb"
+            name="Environment Grid"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="d6e4fffd-be94-4793-939a-3f511d32f21d"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="569ad6ad-1fff-4041-b5d6-b333f59741fe"
+                  LastKnownName="GridObject[][]"
+                  LastKnownLocation="Class Diagrams.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="46fa57ab-394a-4238-9568-e71fcba0c2e3"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="569ad6ad-1fff-4041-b5d6-b333f59741fe"
+            name="GridObject[][]"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="ea6c2d1e-f447-4fef-aeba-7d106e3a6725"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="f5400f7a-e3a8-4f39-b1ed-81f50f62c9dd"
+            name="Environment Grid"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="e2beff21-a2d9-4b29-97c0-e4769a320ff4"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="44078c0e-d2a3-4750-aaeb-af3d5334a01b"
+                  LastKnownName="2D Grid Layer"
+                  LastKnownLocation="Class Diagrams.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="d7ac3c42-c1b2-4d9b-9e87-064c1a3d9c5a"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="aa9314c3-8deb-4af9-b8b0-aac0cc88458b"
+            name="GridObject[][]"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="d3ee04f8-fd33-4536-a2ef-c8e3cf7a6bf3"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="44078c0e-d2a3-4750-aaeb-af3d5334a01b"
+            name="2D Grid Layer"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="970404cd-e965-45bd-b44e-725f1efbaf0e"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="aa9314c3-8deb-4af9-b8b0-aac0cc88458b"
+                  LastKnownName="GridObject[][]"
+                  LastKnownLocation="Class Diagrams.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="31428565-603d-476a-9088-610b5f8295fe"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="21f7f2a5-1c4e-476f-a88f-a39bc90503d1"
+            name="Environment Grid"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="c8e7b286-14ef-4ea6-9833-ecce97a834ba"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="3b5317af-477a-44d8-82a5-649ce72b73f9"
+                  LastKnownName="GridCell[][]"
+                  LastKnownLocation="Class Diagrams.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="3b97e2cf-efc1-499f-92fa-889c563223c3"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="c7752d6f-0122-4382-b832-7b09b299bfbc"
+            name="GridObject[]"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="d8cded17-a614-4c30-ba3e-76e5e12f2c58"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="3b5317af-477a-44d8-82a5-649ce72b73f9"
+            name="GridCell[][]"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="5f5d76d0-1afa-4bab-b54c-90cd1988a383"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="c7752d6f-0122-4382-b832-7b09b299bfbc"
+                  LastKnownName="GridObject[]"
+                  LastKnownLocation="Class Diagrams.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="42f14ef0-495d-45fb-8526-7a1522cfc481"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="e670002d-ff8f-429d-9885-ebaad5643fd8"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="b7279667-addf-4fca-b9ca-3acc3d96571f"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="84b2d164-9b4a-4675-a325-f947379eea7d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6bddc000-f29e-453c-8ae3-68cd09b55518"
+                  LastKnownName="Going Randomly"
+                  LastKnownLocation="Class Diagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="6bddc000-f29e-453c-8ae3-68cd09b55518"
+            name="Going Randomly"
+            isLeaf="false" />
+          <opaqueAction
+            Id="536d0cc5-adb9-484b-9550-4505aa2fdb4d"
+            name="Going to Food"
+            isLeaf="false" />
+          <opaqueAction
+            Id="2ae42c06-7a1b-47c8-b47c-2ff3e87c2195"
+            name="Going Home"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
