@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GXBase Files">
+      <UniqueIdentifier>{632b7e71-7aa4-4276-8f80-95050120ae38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{071db48a-04ae-4d5e-a9c6-73eb2da3678e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Sprite">
+      <UniqueIdentifier>{e25ab946-1ccc-4d56-a2aa-754767f5163c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\lodepng">
+      <UniqueIdentifier>{a1c53a55-9b81-4250-b705-77020900825f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base Classes">
+      <UniqueIdentifier>{07a729f0-9a81-4435-b7bd-776a11fcff0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment">
+      <UniqueIdentifier>{ab719021-e188-446f-94ea-40422cfc1f11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment\Grid">
+      <UniqueIdentifier>{5d83c09f-038c-4e6a-a2c6-b8de0f6b9424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment\Food">
+      <UniqueIdentifier>{eab70b66-a5ed-4f0b-8261-628fc0d656ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment\Pheromone Ants">
+      <UniqueIdentifier>{927ed797-081e-46da-812d-afe08de1230f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment\Pheromones">
+      <UniqueIdentifier>{7a69afc9-9bf2-4e1a-806e-ea54d32d2cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment\Vector Ants">
+      <UniqueIdentifier>{7e02f9bf-53aa-4bad-8007-e02e25ad72ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment\Obstacles">
+      <UniqueIdentifier>{ac74eeb0-8c13-46c0-b701-47d90886debc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\rapidxml">
+      <UniqueIdentifier>{69bd90fc-421f-4f5d-bf89-0289b34492c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GXBaseGame.h">
+      <Filter>GXBase Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GXBaseContext.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicMath.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadSheet.h">
+      <Filter>Engine\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Engine\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>Engine\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject2D.h">
+      <Filter>Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameCounter.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GXBaseTimer.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Ant.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="GridObject2D.h">
+      <Filter>Environment\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Environment\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCell.h">
+      <Filter>Environment\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorAnt.h">
+      <Filter>Environment\Vector Ants</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorAntColony.h">
+      <Filter>Environment\Vector Ants</Filter>
+    </ClInclude>
+    <ClInclude Include="AntColony.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Home.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Food.h">
+      <Filter>Environment\Food</Filter>
+    </ClInclude>
+    <ClInclude Include="FoodManager.h">
+      <Filter>Environment\Food</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagedProperty.h">
+      <Filter>Environment\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Pheromone.h">
+      <Filter>Environment\Pheromones</Filter>
+    </ClInclude>
+    <ClInclude Include="PheromoneManager.h">
+      <Filter>Environment\Pheromones</Filter>
+    </ClInclude>
+    <ClInclude Include="PheromoneAnt.h">
+      <Filter>Environment\Pheromone Ants</Filter>
+    </ClInclude>
+    <ClInclude Include="PheromoneAntColony.h">
+      <Filter>Environment\Pheromone Ants</Filter>
+    </ClInclude>
+    <ClInclude Include="ObstacleManager.h">
+      <Filter>Environment\Obstacles</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstacle.h">
+      <Filter>Environment\Obstacles</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml.hpp">
+      <Filter>Engine\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_iterators.hpp">
+      <Filter>Engine\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_print.hpp">
+      <Filter>Engine\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_utils.hpp">
+      <Filter>Engine\rapidxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GXBaseGame.cpp">
+      <Filter>GXBase Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GXBaseContext.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadSheet.cpp">
+      <Filter>Engine\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Engine\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>Engine\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseObject2D.cpp">
+      <Filter>Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameCounter.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GXBaseTimer.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Ant.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Environment\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCell.cpp">
+      <Filter>Environment\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="GridObject2D.cpp">
+      <Filter>Environment\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorAnt.cpp">
+      <Filter>Environment\Vector Ants</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorAntColony.cpp">
+      <Filter>Environment\Vector Ants</Filter>
+    </ClCompile>
+    <ClCompile Include="AntColony.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Home.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Food.cpp">
+      <Filter>Environment\Food</Filter>
+    </ClCompile>
+    <ClCompile Include="FoodManager.cpp">
+      <Filter>Environment\Food</Filter>
+    </ClCompile>
+    <ClCompile Include="Pheromone.cpp">
+      <Filter>Environment\Pheromones</Filter>
+    </ClCompile>
+    <ClCompile Include="PheromoneManager.cpp">
+      <Filter>Environment\Pheromones</Filter>
+    </ClCompile>
+    <ClCompile Include="PheromoneAnt.cpp">
+      <Filter>Environment\Pheromone Ants</Filter>
+    </ClCompile>
+    <ClCompile Include="PheromoneAntColony.cpp">
+      <Filter>Environment\Pheromone Ants</Filter>
+    </ClCompile>
+    <ClCompile Include="ObstacleManager.cpp">
+      <Filter>Environment\Obstacles</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>Environment\Obstacles</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\bug.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\food.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\home.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\wall.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\pheromone.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="input.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

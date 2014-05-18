@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="47652944-b697-4fc1-b5c2-2f1293cbd200" name="Activity1" linkedPackageId="30147542-9058-47f2-b674-15e3fe7fb034" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8bc64fd1-fb7e-4a64-8297-0866b9b6ea27">
+      <profileInstance Id="87785c8a-5f2c-4b28-9ab3-5f8176c739b6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="af009612-9352-42a3-809e-f9a863228166">
+      <profileInstance Id="6ce86020-a8ce-461a-9400-ea444ecf338d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b53c7a6a-9619-465a-84c5-ecb26d806eab" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="e670002d-ff8f-429d-9885-ebaad5643fd8" />
+        <nodes>
+          <initialNode Id="b03dc91f-c8d0-4f87-aeca-74e973fce055" name="Initial1" isLeaf="false">
+            <elementDefinition Id="b7279667-addf-4fca-b9ca-3acc3d96571f" />
+            <flowNodeTargets>
+              <controlFlow Id="79bc67c3-1645-497e-bee3-8202bb242465" isLeaf="false">
+                <opaqueActionMoniker Id="389531ba-0431-4215-9a2d-e15097a1b6bb" LastKnownName="Going Randomly" />
+                <elementDefinition Id="84b2d164-9b4a-4675-a325-f947379eea7d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="389531ba-0431-4215-9a2d-e15097a1b6bb" name="Going Randomly" isLeaf="false">
+            <elementDefinition Id="6bddc000-f29e-453c-8ae3-68cd09b55518" />
+          </opaqueAction>
+          <opaqueAction Id="23b4b9c4-a070-44b6-aac7-e4643c2d93f1" name="Going to Food" isLeaf="false">
+            <elementDefinition Id="536d0cc5-adb9-484b-9550-4505aa2fdb4d" />
+          </opaqueAction>
+          <opaqueAction Id="60a9b9c5-3540-4c7c-ab51-d20c826aa73f" name="Going Home" isLeaf="false">
+            <elementDefinition Id="2ae42c06-7a1b-47c8-b47c-2ff3e87c2195" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="30147542-9058-47f2-b674-15e3fe7fb034" name="Class Diagrams">
+    <elementDefinition Id="5fa2f7a7-bbdb-4cef-b676-c73d5e0ef990" />
+  </package>
+</activityRootModel>

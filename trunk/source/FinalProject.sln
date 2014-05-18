@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FinalProject", "Source\FinalProject.vcxproj", "{27A9AE6B-9226-4D22-BC84-7341641C2163}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Class Diagrams", "Class Diagrams\Class Diagrams.modelproj", "{8067CBF4-E517-4AB9-8442-16AD19253404}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alexbelezjaks.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Source\\FinalProject.vcxproj
+		SccProjectName1 = Source
+		SccLocalPath1 = Source
+		SccProjectUniqueName2 = Class\u0020Diagrams\\Class\u0020Diagrams.modelproj
+		SccProjectName2 = Class\u0020Diagrams
+		SccLocalPath2 = Class\u0020Diagrams
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Debug|Win32.ActiveCfg = Debug|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Debug|Win32.Build.0 = Debug|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Release|Any CPU.ActiveCfg = Release|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Release|Win32.ActiveCfg = Release|Win32
+		{27A9AE6B-9226-4D22-BC84-7341641C2163}.Release|Win32.Build.0 = Release|Win32
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8067CBF4-E517-4AB9-8442-16AD19253404}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

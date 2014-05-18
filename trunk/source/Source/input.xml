@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <!--General Simulation settings-->
+  <SIMULATION_SPEED>5.0</SIMULATION_SPEED><!-- Increase/Decrease speed of entire simulation simulation -->
+  <RANDOM_SEED>1337</RANDOM_SEED><!--Unsigned integer - Zero for random seed, anything other is fixed seed -->
+  <COLONY_TYPE>1</COLONY_TYPE><!-- 0 - Vector Ants; 1 - Pheromone Ants -->
+  <FIXED_STEP_ENABLED>1</FIXED_STEP_ENABLED><!-- 0-false, 1-true; fixed delta time step. Enable only if you need very accurate output results -->
+  <DELTA_TIME>0.01</DELTA_TIME><!-- used as delta time if FIXED_STEP_ENABLED is true -->
+  
+  <!--Log file information-->
+  <LOG_OUTPUT_FILE>output.csv</LOG_OUTPUT_FILE><!-- Name and path for output file -->
+  <LOG_FREQUENCY>1.0</LOG_FREQUENCY><!-- In seconds - how often data is written to output file -->
+  <LOG_DURATION>60.0</LOG_DURATION><!-- In seconds - For how long data is going to be written to output. After this time is passed output file is closed.-->
+  
+  <!--Pheromone settings-->
+  <MAX_PHEROMONE_LEVEL>1.0</MAX_PHEROMONE_LEVEL><!-- Maximum level of pheromone, leave 1.0 unless you know what you are doing -->
+  
+  <!--Grid appearance settings-->
+  <RENDER_HOME_TRAIL>0</RENDER_HOME_TRAIL><!-- 0-false, 1-true - Recommended to leave 0, as this impacts graphics performance a lot -->
+  <RENDER_FOOD_TRAIL>1</RENDER_FOOD_TRAIL><!-- 0-false, 1-true -->
+  <RENDER_GRID_LINES>0</RENDER_GRID_LINES><!-- 0-false, 1-true - Render on/off for simulation field grid lines -->
+  <HOME_TRAIL_COLOR><!-- Color of home pheromones -->
+    <R>0.0</R>
+    <G>1.0</G>
+    <B>0.0</B>
+    <A>1.0</A>
+  </HOME_TRAIL_COLOR>
+  <FOOD_TRAIL_COLOR><!-- Color for food pheromones -->
+    <R>1.0</R>
+    <G>1.0</G>
+    <B>1.0</B>
+    <A>1.0</A>    
+  </FOOD_TRAIL_COLOR>
+  
+  <!--Ant settings-->
+  <SMELL_RANGE>2</SMELL_RANGE><!-- Unsigned integer - Sence range for ants. Optimal 2 for pheromone ants, and 8 for vector ants -->
+  <ENERGY_CONSUMPTION>0.02</ENERGY_CONSUMPTION><!-- Ant energy consumption rate. Maximum value - 1.0. -->
+  <ANT_SPEED>0.15</ANT_SPEED><!-- How fast ant walks from one grid to another -->
+  <RANDOM_FACTOR>0.2</RANDOM_FACTOR><!-- Decision rate for pheromone ant. if left 0 ant always follows strongest pheromone path. The higher it is, the more likely are ant to follow new path. -->
+  <HUNGRY_LEVEL>0.3</HUNGRY_LEVEL><!-- What percentage of total energy ant assumes it is hungry. Maximum value - 1.0 -->
+  <START_ANT_COUNT>200</START_ANT_COUNT><!-- Start quantity of ants -->
+  <MAX_ENERGY>100.0</MAX_ENERGY><!-- Maximum ant energy -->
+  <MAX_FOOD_STORAGE>50.0</MAX_FOOD_STORAGE><!-- Maximum amount of food ant could carry back to home -->
+  
+  <!--Food Settings-->
+  <MIN_FOOD>500</MIN_FOOD><!-- Minimum food amount in the sinle cell -->
+  <MAX_FOOD>5000</MAX_FOOD><!-- Maximum food amount in the sinle cell -->
+  <START_FOOD_COUNT>10</START_FOOD_COUNT><!-- Number of food heaps -->
+  <MIN_FOOD_ARRAY>20</MIN_FOOD_ARRAY><!-- Minumum number of food cells in one heap -->
+  <MAX_FOOD_ARRAY>40</MAX_FOOD_ARRAY><!-- Maximum number of food cells in one heap -->
+  
+  <!--Obstacle parameters-->
+  <START_OBSTACLE_COUNT>100</START_OBSTACLE_COUNT><!-- Obstacle heap count -->
+  <MIN_OBSTACLE_ARRAY>10</MIN_OBSTACLE_ARRAY><!-- Minimum number of obstacle cells in a heap -->
+  <MAX_OBSTACLE_ARRAY>15</MAX_OBSTACLE_ARRAY><!-- Maximum number of obstacle celss in a heap -->
+  
+  <!--Home Trail-->
+  <HOME_TRAIL_DEPOSIT_RATE>0.5</HOME_TRAIL_DEPOSIT_RATE><!-- Max value - 1.0; How much home pheromone ant leaves while it walks from home. -->
+  <HOME_TRAIL_FORGET_RATE>0.01</HOME_TRAIL_FORGET_RATE><!-- Max value - 1.0; How fast home pheromone evaporates -->
+  <HOME_ALPHA>0.5</HOME_ALPHA><!-- Max value - 1.0; Factor value for pheromone strength level when choosing next path to go -->
+  <HOME_BETA>0.8</HOME_BETA><!-- Max value - 1.0; Factor value for target direction level when choosing next path to go -->
+  
+  <!--Food Trail-->
+  <FOOD_TRAIL_DEPOSIT_RATE>0.2</FOOD_TRAIL_DEPOSIT_RATE><!-- Max value - 1.0; How much food pheromone ant leaves while carrying food to home. -->
+  <FOOD_TRAIL_FORGET_RATE>0.05</FOOD_TRAIL_FORGET_RATE><!-- Max value - 1.0; How fast food pheromone evaporates -->
+  <FOOD_ALPHA>0.5</FOOD_ALPHA><!-- Max value - 1.0; Factor value for pheromone strength level when choosing next path to go -->
+  <FOOD_BETA>1.0</FOOD_BETA><!-- Max value - 1.0; Factor value for target direction level when choosing next path to go -->
+</Settings>

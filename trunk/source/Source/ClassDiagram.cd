@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Game" Collapsed="true">
+    <Position X="8.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwCAQAAAAAAAAASAAAAAgAAACiAQBAAAAAAAAAAAAQ=</HashCode>
+      <FileName>GXBaseGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyApp" Collapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GXBaseGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camera" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAEAAAQAAAAAAQAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FrameCounter" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAA=</HashCode>
+      <FileName>FrameCounter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GXBaseContext" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAABAAAAJBAQAAAAAAQAHAAgAAAAACAQAAEACA=</HashCode>
+      <FileName>GXBaseContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GXBaseTimer" Collapsed="true">
+    <Position X="23.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAgCAAAAAQAIAAAAAAAAACAIAAAAAAAAgA=</HashCode>
+      <FileName>GXBaseTimer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResourceManager" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAIAAAAEAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ResourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuadSheet" Collapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QASAACCAAAAAAAAAAIAABAAAAAAAIAAQAAQAAAAAAAA=</HashCode>
+      <FileName>QuadSheet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sprite" Collapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJSAIQIABCCFEgSABAQEAAQAAQBAAkAQAAgAgA4AQII=</HashCode>
+      <FileName>Sprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseObject2D" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAECAAAAEAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseObject2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ant" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAQEAQgAAAAIAAAQgAAGiBAAAIAAEAAgBABAQAAIACo=</HashCode>
+      <FileName>Ant.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AntColony">
+    <Position X="32.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAQABAAAMAAgAAABAAAkAAAQgAAMAAAEAAAEAAAAA=</HashCode>
+      <FileName>AntColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Home" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Home.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Settings" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAQCAAAHQAgAAAAgSMQCMAUgggQAAAQCoEQaAEAgIEA=</HashCode>
+      <FileName>Settings.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManagedProperty&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAABAAAQAIAAAAAAAQAAAAABgEgAAAAACA=</HashCode>
+      <FileName>ManagedProperty.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Grid" Collapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAgAgAAgAAgAAAAIAAAQIEAAEDwgAABAgAAIggQA=</HashCode>
+      <FileName>Grid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GridCell" Collapsed="true">
+    <Position X="21.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECYAAAgCAAAAAgAgAAAABAwYAAEAAAAAAAIgAARAAAA=</HashCode>
+      <FileName>GridCell.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GridObject2D" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RIQEAEAAAKABEgAAAAAABggkEAAAgABAAAAAIAQAIAA=</HashCode>
+      <FileName>GridObject2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodManager">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAUAAAAAAgAAIAAAAgACAAEAAAUAAAgBAAAAEAA=</HashCode>
+      <FileName>FoodManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Food" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAgAAAAA=</HashCode>
+      <FileName>Food.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PheromoneAnt" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAgAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAACwAAA=</HashCode>
+      <FileName>PheromoneAnt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PheromoneAntColony">
+    <Position X="33.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAEAA=</HashCode>
+      <FileName>PheromoneAntColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pheromone" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAIAAAAAAAAgAAAAAABCAAAAAAAAEAAAgAAAAAAEI=</HashCode>
+      <FileName>Pheromone.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PheromoneManager">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAAAAAgAAAAACAgAAAAAAAAAQABAgAAAAAAE=</HashCode>
+      <FileName>PheromoneManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorAnt" Collapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAgAAAAAAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VectorAnt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorAntColony">
+    <Position X="31.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>VectorAntColony.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obstacle" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Obstacle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObstacleManager">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAYAAAAAIAgAAAAAAAgAAABAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObstacleManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lodepng::State" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::parse_error" Collapsed="true">
+    <Position X="21.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgCAAAAAAAAAAYAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::xml_node&lt;Ch&gt;" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABFIAAAYAIUgjEAAAAAEAEgAEoBADBAAAAgEBEQBAA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::xml_attribute&lt;Ch&gt;" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAABBAAAIAIIAAAAAAAAAAAAA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::xml_document&lt;Ch&gt;" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAgAAAASAQAAABAAAAAAAQCAAAAAgCAAEAYACAAKAA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::memory_pool&lt;Ch&gt;" Collapsed="true">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEwABBQAAAAAAgAACAAQAAAAAQIAgIQAEAAAAQAAAA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::xml_base&lt;Ch&gt;" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAABEAAABAAAAAEAAAAAQUICIAABAAAAAAAAA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::node_iterator&lt;Ch&gt;" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAQAEAAwAAAAAAAAAgAAAgAAAAAAA=</HashCode>
+      <FileName>rapidxml_iterators.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::attribute_iterator&lt;Ch&gt;" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAEEAwAAAAAAAAAIAAAgAAAAAAA=</HashCode>
+      <FileName>rapidxml_iterators.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rapidxml::file&lt;Ch&gt;" Collapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAABAAQAAAAAAA=</HashCode>
+      <FileName>rapidxml_utils.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Vector2&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Vector3&lt;T&gt;" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Vector4&lt;T&gt;" Collapsed="true">
+    <Position X="1.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Matrix4x4&lt;T&gt;" Collapsed="true">
+    <Position X="12.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_001e_1" Collapsed="true">
+    <Position X="8.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoARJhAQAAAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_001e_2" Collapsed="true">
+    <Position X="4.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAQBhAAAAAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="DynamicArray&lt;T&gt;" Collapsed="true">
+    <Position X="23.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAIAEAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="uivector" Collapsed="true">
+    <Position X="18" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAAAQAAAAAAA=</HashCode>
+      <FileName>lodepng.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ucvector" Collapsed="true">
+    <Position X="25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAAAQAAAAAAA=</HashCode>
+      <FileName>lodepng.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="HuffmanTree" Collapsed="true">
+    <Position X="18" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAEAAAAAAAAAICAAAAAAAAACAA=</HashCode>
+      <FileName>lodepng.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Coin" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>lodepng.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Hash" Collapsed="true">
+    <Position X="25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>lodepng.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ColorTree" Collapsed="true">
+    <Position X="21.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>lodepng.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ColorProfile" Collapsed="true">
+    <Position X="19.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCgAAAAAAAgAAAABoAAEAAAAAAAAgBAKAIAVCAAAAAA=</HashCode>
+      <FileName>lodepng.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGDecompressSettings" Collapsed="true">
+    <Position X="25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAgAABAAAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGCompressSettings" Collapsed="true">
+    <Position X="21.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAIAAAACAAAAAAoAAAACAAAACIAAEAAAAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGColorMode" Collapsed="true">
+    <Position X="19.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAIAAIAAAAAAEQABAIAAAAAAIAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGTime" Collapsed="true">
+    <Position X="21.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAAAAAAAAgAAAAAAAAQAAAAAAAAiAAAAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGInfo" Collapsed="true">
+    <Position X="19.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABQgAQAEAAgAAAEAQAAEQQwEAAAACAAQECAAAAEkA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGDecoderSettings" Collapsed="true">
+    <Position X="23.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAEAAAAAAAAAAAAAAAAAAAABCAgAQAAAAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGEncoderSettings" Collapsed="true">
+    <Position X="18" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACABAAQAAAAAAAAAAAAAACAAIIAQgAAAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LodePNGState" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAIEAAAAAAAAAAAQAAAAAAQAAAQA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rapidxml::internal::lookup_tables&lt;Dummy&gt;" Collapsed="true">
+    <Position X="23.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAgBBASAAAAAAgAAgAAAAAAAAFAABAAIA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="uint" Collapsed="true">
+    <Position X="18" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="float2" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="float3" Collapsed="true">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="float4" Collapsed="true">
+    <Position X="1.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int2" Collapsed="true">
+    <Position X="9.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="float4x4" Collapsed="true">
+    <Position X="12.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicMath.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Vertex2D" Collapsed="true">
+    <Position X="8.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LineVertex2D" Collapsed="true">
+    <Position X="4.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vertex.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="SpriteState" Collapsed="true">
+    <Position X="23.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAgABAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sprite.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LodePNGColorType" Collapsed="true">
+    <Position X="25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAIBAAAAAAAAAACAAAAAAAIAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LodePNGFilterStrategy" Collapsed="true">
+    <Position X="18" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAARAAAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LodePNGAutoConvert" Collapsed="true">
+    <Position X="23.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAQAIABAIA=</HashCode>
+      <FileName>lodepng.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ColonyType" Collapsed="true">
+    <Position X="18" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Settings.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GridObjectState" Collapsed="true">
+    <Position X="19.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GridObject2D.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GridObjResult" Collapsed="true">
+    <Position X="21.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAAAAAEAIAAAEAAAACAMAABAAgAgAACAAAAAAAAAAA=</HashCode>
+      <FileName>GridObject2D.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PheromoneType" Collapsed="true">
+    <Position X="21.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAI=</HashCode>
+      <FileName>Pheromone.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="rapidxml::node_type" Collapsed="true">
+    <Position X="19.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQDAACAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACA=</HashCode>
+      <FileName>rapidxml.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
