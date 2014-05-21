@@ -35,13 +35,13 @@ public:
 	GridObjResult Update(float delta_time);
 
 private:
-	// Ant would follow selected trail, going into one direction, avoiding going where he just was.
-	// If multiple paths present, the one with strongest pheromone would be choisen
+	// Ant follows selected pheromone trail type (home or food)
+	// If multiple paths present, the one with strongest pheromone chosen
 	int2 FollowTrail(PheromoneType type, int2 target);
+
 	// Deposit pheromone on grid, depending on it's energy and food storage
 	void DepositPheromone();
-	// Ant smells pheromones within it's smell range and decide which way the smell is strongest. Returs (0,0) if can't smell anything.
-	int2 SmellPheromone(PheromoneType type);
+
 	// Decide what to do next
 	void CalculateNextAction();
 };

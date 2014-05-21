@@ -38,7 +38,6 @@ PheromoneAnt::PheromoneAnt(uint texture, float angle, Grid* grid, Home* home, Fo
 
 PheromoneAnt::~PheromoneAnt(void)
 {
-	// Ooops, some memory leaked
 }
 
 GridObjResult PheromoneAnt::Update(float delta_time)
@@ -52,15 +51,8 @@ GridObjResult PheromoneAnt::Update(float delta_time)
 		EatFoodStorage();
 		EatHomeFood();
 
-		// Moved to the new position, leave pheromone trail
+		// Just moved to the new position, leave pheromone trail
 		DepositPheromone();
-	}
-	else
-	{
-		TakeFood();
-		DepositeFood();
-		EatFoodStorage();
-		EatHomeFood();
 	}
 
 	CalculateNextAction();
@@ -70,9 +62,10 @@ GridObjResult PheromoneAnt::Update(float delta_time)
 
 void PheromoneAnt::DepositPheromone()
 {
-	float foodStorage = GetFoodStorage();
-	float energy = GetEnergy();
+	float foodStorage = this->GetFoodStorage();
+	float energy = this->GetEnergy();
 
+	// If ant is carrying food it leaves food trails, otherwise leaves home trail
 	if (foodStorage > 0)
 	{
 		// Leave food pheromobe trail
@@ -85,58 +78,11 @@ void PheromoneAnt::DepositPheromone()
 	}
 }
 
-int2 PheromoneAnt::SmellPheromone(PheromoneType type)
-{
-	uint range = Settings::SMELL_RANGE;
-	int2 startPos = m_position - int2(range, range);
-	int2 endPos = m_position + int2(range, range);
-	float2 dir = float2(0, 0);
-	bool smell_found = false;
-
-	for (int x = startPos.x; x < endPos.x; ++x)
-	{
-		for (int y = startPos.y; y < endPos.y; ++y)
-		{
-			int2 current = int2(x, y);
-			// Check if position is valid
-			if (!m_grid->IfPositionValid(current)) continue;
-
-			// Check if within the smell range
-			// maybe...
-
-			// Add new smell directory to average smell dir
-			// TODO. Adds smell fadeout according to distance
-			float strength = m_grid->GetPheromoneStrength(current, type);
-			if (strength > 0.01f)
-			{
-				dir += int2float2(current - m_position) * strength;
-				smell_found = true;
-			}
-		}
-	}
-
-	if (!smell_found) return int2(0, 0);
-
-	float bestAngle = PI_F;
-	int2 bestDir = int2(0,0);
-	for each(int2 near_tile in NearTiles)
-	{
-		float a = angle(int2float2(near_tile), dir) < bestAngle;
-		if (a < bestAngle && m_grid->IfPositionValid(m_position + near_tile) && (m_position + near_tile) != GetLastPos())
-		{
-			bestAngle = a;
-			bestDir = near_tile;
-		}
-	}
-
-	return bestDir;
-}
-
 void PheromoneAnt::CalculateNextAction()
 {
-	if (m_state == GridObjectState::moving) return;
+	if (m_state == GridObjectState::moving) return; // If ant is moving at the moment it can't decide on next movement yet
 
-	if (GetFoodStorage() > 0.01f * Settings::MAX_FOOD_STORAGE)
+	if (this->GetFoodStorage() > 0.01f * Settings::MAX_FOOD_STORAGE)
 	{
 		// GOING HOME TO DEPOSIT FOOD (Following home trail)
 
@@ -148,7 +94,7 @@ void PheromoneAnt::CalculateNextAction()
 		}
 
 		// Follow home trail
-		int2 home_trail = FollowTrail(PheromoneType::home, m_home->GetPos());
+		int2 home_trail = this->FollowTrail(PheromoneType::home, m_home->GetPos());
 		if (home_trail != int2(0,0))
 		{
 			SetTarget(m_position + home_trail);
@@ -157,7 +103,7 @@ void PheromoneAnt::CalculateNextAction()
 
 		return;
 	}
-	else if (GetEnergy() > Settings::MAX_ENERGY * Settings::HUNGRY_LEVEL)
+	else if (this->GetEnergy() > Settings::MAX_ENERGY * Settings::HUNGRY_LEVEL)
 	{
 		// TRYING TO FIND FOOD (Following food trail)
 
@@ -180,9 +126,9 @@ void PheromoneAnt::CalculateNextAction()
 
 		return;
 	}
-	else if (GetEnergy() < Settings::MAX_ENERGY * Settings::HUNGRY_LEVEL)
+	else if (this->GetEnergy() < Settings::MAX_ENERGY * Settings::HUNGRY_LEVEL)
 	{
-		// VERY HUNGRY, RETURN HOME
+		// VERY HUNGRY, RETURN HOME (Following home trail)
 
 		// See if there is home close to us
 		if (dis(m_position, m_home->GetPos()) <= Settings::SMELL_RANGE)
@@ -207,28 +153,34 @@ void PheromoneAnt::CalculateNextAction()
 
 int2 PheromoneAnt::FollowTrail(PheromoneType type, int2 target)
 {
-	float best_str = 0.01f;
-	int2 best_dir = int2(0,0); 
+	float best_str = 0.01f;		// Best pheromone strength
+	int2 best_dir = int2(0,0);	// Best direction to target
 
 	std::vector<int2> to_scan;
-	if (GetLastPos() == m_position)
+	if (this->GetLastPos() == m_position)
 	{
+		// If have not moved since last turn (when spawned, after reached destination, like home and food) 
+		// Put all 8 direction into temporary scan list ...
 		for each(int2 near_tile in NearTiles) to_scan.push_back(near_tile);
 	}
 	else
 	{
+		// ... otherwise put three directions for potential movement: left, right and forward
 		// Find out straight moving direction
 		int2 straight = m_position - GetLastPos();
 		int straight_index = GetNearTileIndex(straight);
 		if (straight_index == -1) throw new exception("Ant straight direction index can't be found");
+
 		// Left direction
 		int left_index = straight_index - 1;
 		if (left_index == -1) left_index = 7;
 		int2 left = NearTiles[left_index];
+
 		// Right direction
 		int right_index = straight_index + 1;
 		if (right_index == 8) right_index = 0;
 		int2 right = NearTiles[right_index];
+
 		// Make a nice list to iterate thought it
 		to_scan.push_back(straight);
 		to_scan.push_back(left);
@@ -237,9 +189,9 @@ int2 PheromoneAnt::FollowTrail(PheromoneType type, int2 target)
 
 	for each(int2 near_tile in to_scan)
 	{
-		if (!m_grid->IfPositionValid(m_position + near_tile)) continue;
-		if (m_grid->IfObstacle(m_position + near_tile)) continue;
-		if ((m_position + near_tile) == GetLastPos()) continue;
+		if (!m_grid->IfPositionValid(m_position + near_tile)) continue;	// Position Invalid
+		if (m_grid->IfObstacle(m_position + near_tile)) continue;		// Position is obstacle
+		if ((m_position + near_tile) == GetLastPos()) continue;			// Position is where ant comed from (deprecated)
 
 		// Find attractiveness coefficient according to ant movement direction
 		// It should be from 0 (not attractive), to 1 (attractive)
@@ -254,7 +206,7 @@ int2 PheromoneAnt::FollowTrail(PheromoneType type, int2 target)
 			pos_d = 1 - (a / PI_F);
 		}
 
-		// Find attractiveness coefficient according to pheromone intensity in all directions
+		// Find attractiveness coefficient using pheromone intensity
 		float phem_d = m_grid->GetPheromoneStrength(m_position + near_tile, type);
 
 		// Find overall attractiveness for the grid position
@@ -268,12 +220,12 @@ int2 PheromoneAnt::FollowTrail(PheromoneType type, int2 target)
 		// Should have really wrote it somewhere else than source code
 		float trail_str = (phem_d * a) * (pos_d * b);				 
 
-		// Compare is it better than another directions
+		// Compare, is it better than another directions ?
 		if (trail_str > best_str)
 		{
-			// Add random factor to movements
-			// For example, if ant have choise of two path of relatively equals pheromone trail strenght
-			// it could follow lesser strenght trail, thouse "trying" another path.
+			// Add random factor (decision factor) to movements
+			// For example, if ant have choses of two paths of relatively equals pheromone trail strenght
+			// it could follow lesser strenght trail, thus "trying" another path.
 			float a = trail_str;
 			float b = best_str * Settings::RANDOM_FACTOR;
 			float r = rnd(a + b);
