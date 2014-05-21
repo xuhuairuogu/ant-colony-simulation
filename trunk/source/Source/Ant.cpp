@@ -66,7 +66,9 @@ Ant::~Ant(void)
 
 GridObjResult Ant::Update(float delta_time)
 {	
+	// Consume ant energy
 	m_energy.Take(Settings::ENERGY_CONSUMPTION * delta_time);
+
 	if (m_energy.Value() <= 0.0f)
 	{
 		// This ant is dead because of starvation
@@ -260,6 +262,7 @@ GridObjResult Ant::MoveRandomly()
 	return result;
 }
 
+// Finds and returns position index inside NearTiles array
 int Ant::GetNearTileIndex(int2 near_tile)
 {
 	for (uint i = 0; i < 8; ++i)
