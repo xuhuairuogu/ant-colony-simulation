@@ -1,11 +1,12 @@
 #labels Phase-Deploy
 // System Requirements //
-	.NET Framework 4.0
-	Visual C++ 2012 Redistributable
+
+.NET Framework 4.0
+Visual C++ 2012 Redistributable
 
 // Simulation controls //
 
-You can change various simulation parameters during execution to see effect in real time. This is list of simulation parameters you can change in real time.
+You can change various simulation parameters during execution to see effect in real time. Use mouse or keyboard to change parameter values.
 
 // Configuration file //
 
