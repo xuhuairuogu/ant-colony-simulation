@@ -46,7 +46,7 @@ public:
 	// Adds new value to current value. Returns remainder.
 	T Add(T add_value)
 	{
-		//if (T <= MIN_VALUE) throw std::exception("Can't add negative amount");
+		if (T <= 0) throw std::exception("Can't add zero/negative amount");
 
 		m_value += add_value;
 		if (m_value > MAX_VALUE)
@@ -61,6 +61,8 @@ public:
 	// Requests given value from storage. Return maximum ammoun it could give (0 if nothing)
 	T Take(T request)
 	{
+		if (T <= 0) throw std::exception("Can't add zero/negative amount");
+
 		T amount_given;
 
 		if (request > m_value)
@@ -87,10 +89,13 @@ ManagedProperty<T>& operator<<(ManagedProperty<T>& to_add, ManagedProperty<T>& t
 {
 	// That is how maximum object can take to be 100% full
 	T request = to_add.FreeSpace();
+
 	// That is how much object we are taking from can give
 	T can_give = to_take.Take(request);
+
 	// Adding value we got to object we want to fill
 	to_add.Add(can_give);
+
 	return to_add;
 }
 
@@ -99,9 +104,12 @@ ManagedProperty<T>& operator>>(ManagedProperty<T>& to_take, ManagedProperty<T>& 
 {
 	// That is how maximum object can take to be 100% full
 	T request = to_add.FreeSpace();
+
 	// That is how much object we are taking from can give
 	T can_give = to_take.Take(request);
+
 	// Adding value we got to object we want to fill
 	to_add.Add(can_give);
+
 	return to_take;
 }
