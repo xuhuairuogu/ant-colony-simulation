@@ -5,14 +5,17 @@ developed by Aleksejs Belezjaks for University of Hull 08341 Final Project 13/14
 
 
 // System Requirements //
-	.NET Framework 4.0
-	Visual C++ 2012 Redistributable
+	
+.NET Framework 4.0
+Visual C++ 2012 Redistributable
 
 // Simulation controls //
+
 You can change various simulation parameters during execution to see effect in real time. 
 This is list of simulation parameters you can change in real time.
 
 // Configuration file //
+
 Instead of changing all parameters in real-time, you can put them into configuration file 
 and feed it to program on start-up. You can find example configuration file in the same folder 
 as executable file. You can find description of all parameters in this file.
