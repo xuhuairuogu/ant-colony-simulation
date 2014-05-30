@@ -44,6 +44,7 @@ GridObjResult PheromoneAnt::Update(float delta_time)
 {
 	GridObjResult result;
 
+	// Check if ant just moved to the new position
 	if ((result = Ant::Update(delta_time)) == GridObjResult::Moved)
 	{
 		TakeFood();

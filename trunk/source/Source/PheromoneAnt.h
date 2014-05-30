@@ -24,8 +24,7 @@
 #include "ant.h"
 enum PheromoneType;
 
-class PheromoneAnt :
-	public Ant
+class PheromoneAnt : public Ant
 {
 public:
 	PheromoneAnt(void);
@@ -42,6 +41,7 @@ private:
 	// Deposit pheromone on grid, depending on it's energy and food storage
 	void DepositPheromone();
 
+	
 	// Decide what to do next
 	void CalculateNextAction();
 };
